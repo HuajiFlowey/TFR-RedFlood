@@ -154,4 +154,23 @@ ideas = {
 			}
 		}
 	}
+	
+	#内阁
+	head_minister = {
+		PRC_HuChunHua_hog_dummy = {
+			picture = HuChunHua_hog
+			name = PRC_HuChunHua_hog
+			allowed = { original_tag = PRC}
+			visible = {
+				has_country_flag = PRC_the_man_death_flag
+				tag = PRC
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = { 
+				hog_pragmatic_statesman
+			}
+		}
+	}
 }

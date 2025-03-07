@@ -306,6 +306,32 @@ ideas = {
 				terrain_penalty_reduction = 0.05
 			}
 		}
+		New_left_PRC_communist_party_of_china_dummy = {
+			name = PRC_chinese_communist_party_idea
+			modifier = {
+			}
+		}
+		New_left_PRC_communist_party_of_china_dummy_1 = {
+			name = PRC_chinese_communist_party_idea
+			modifier = {
+				crypto_strength = -1
+			}
+		}
+		New_left_PRC_communist_party_of_china_dummy_2 = {
+			name = PRC_chinese_communist_party_idea
+			modifier = {
+				stability_factor = -0.05
+				libertarian_socialist_drift = 0.001
+				social_democrat_drift = 0.001
+				totalitarian_socialist_drift = 0.001
+			}
+		}
+		New_left_PRC_communist_party_of_china_dummy_3 = {
+			name = PRC_chinese_communist_party_idea
+			modifier = {
+				communist_drift = 0.01
+			}
+		}
 		#太空军
 		JAP_space_strike_satellite = {
 			name = JAP_space_strike_satellite
@@ -854,4 +880,6 @@ ideas = {
 			}
 		}
 	}
+
+	
 }

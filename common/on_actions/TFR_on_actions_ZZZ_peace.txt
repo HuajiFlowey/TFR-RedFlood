@@ -557,6 +557,9 @@ on_actions = {
 								traits = {
 								}
 							}
+							PRC = {
+								add_to_faction = SAJ
+							}
 						}
 					}
 					PAK = {

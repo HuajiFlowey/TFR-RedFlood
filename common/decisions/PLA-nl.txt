@@ -578,136 +578,200 @@ PRC_new_left_pla_reformation = {
 			}
 		}
 	}
-
 	#研发
-	PLA_space_army_research = {
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+	PRC_military_project_mission = {
+		#icon = GFX_decision_ger_military_buildup
+		allowed = { 
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 180    
-        timeout_effect = {
-			add_to_variable = { PRC_space_force_on_orbit = 1 }
-			add_to_variable = { space_army_upper_limit = 1 }
-			create_equipment_variant = {
-				name = "轨道空降军辅助侦察坦克"
-				type = light_tank_chassis_3
-				parent_version = 0
-				modules = {
-					main_armament_slot = tank_auto_cannon_2
-					turret_type_slot = tank_light_three_man_tank_turret
-					suspension_type_slot = tank_bogie_suspension
-					armor_type_slot = tank_welded_armor
-					engine_type_slot = tank_diesel_engine
-					special_type_slot_1 = tank_radio_3
-					special_type_slot_5 = gunner_thermal_2
-				}
-				upgrades = {
-					tank_nsb_engine_upgrade = 0
-					tank_nsb_armor_upgrade = 14
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 125
+		fire_only_once = no
+		timeout_effect = {
+		}
+		complete_effect = {
+		}
+		priority = 999
+	}
+	PRC_project_ghost_dec = {
+		#icon = GFX_decision_ger_military_buildup
+		cost = 25
+		fire_only_once = yes
+		allowed = { 
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PLA_equipment_research
+		}
+		available = {
+			NOT = {
+				has_country_flag = PRC_military_project_researching
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = anti_debil
 				}
 			}
-			
-			division_template = {
-				name = "轨道空降军"
-				is_locked = yes
-				
-				regiments = {
-					space_army = {
-						x = 0
-						y = 1
-					}
-					space_army = {
-						x = 0
-						y = 2
-					}
-					space_army = {
-						x = 0
-						y = 3
-					}
-					space_army = {
-						x = 0
-						y = 4
-					}
-					space_army = {
-						x = 0
-						y = 0
-					}
-					space_army = {
-						x = 1
-						y = 1
-					}
-					space_army = {
-						x = 1
-						y = 2
-					}
-					space_army = {
-						x = 1
-						y = 3
-					}
-					space_army = {
-						x = 1
-						y = 4
-					}
-					space_army = {
-						x = 1
-						y = 0
-					}
-					space_army = {
-						x = 2
-						y = 0
-					}
-					space_army = {
-						x = 2
-						y = 1
-					}
-					space_army = {
-						x = 2
-						y = 2
-					}
-				}
-				
-				support = {
-					engineer = {
-						x = 0
-						y = 0
-					}
-					exoskeleton_support = {
-						x = 0
-						y = 1
-					} 
-					spa_company = {
-						x = 0
-						y = 2
-					}
-					light_tank_recon = {
-						x = 0
-						y = 3
-					}
-					signal_company = {
-						x = 0
-						y = 4
-					}
-				}
-			}
-			custom_effect_tooltip = PLA_space_army_research_ctt
+		}
+		complete_effect = {
+			country_event = china.259
+			set_country_flag = anti_debil
+		}
+
+		ai_will_do = {
+			base = 1
 		}
 	}
-	PLA_space_army_produce = {
-		activation = {                
-            always = no
-        }
-		available = {
-			hidden_trigger = { always = no }
+	PRC_project_nib_dec = {
+		#icon = GFX_decision_ger_military_buildup
+		cost = 25
+		fire_only_once = yes
+		allowed = { 
+			tag = PRC
 		}
-        is_good = yes
-        days_mission_timeout = 60
-        timeout_effect = {
-			add_to_variable = { PRC_space_force_on_orbit = 1 }
-			PRC_space_force_counter = yes
+		visible = {
+			has_completed_focus = PLA_equipment_research
+		}
+		available = {
+			NOT = {
+				has_country_flag = PRC_military_project_researching
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = anti_debil
+				}
+			}
+		}
+		complete_effect = {
+			country_event = china.260
+			set_country_flag = anti_debil
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	PRC_project_swimmer_dec = {
+		#icon = GFX_decision_ger_military_buildup
+		cost = 25
+		fire_only_once = yes
+		allowed = { 
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PLA_equipment_research
+		}
+		available = {
+			NOT = {
+				has_country_flag = PRC_military_project_researching
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = anti_debil
+				}
+			}
+		}
+		complete_effect = {
+			country_event = china.261
+			set_country_flag = anti_debil
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	PRC_project_impulse_dec = {
+		#icon = GFX_decision_ger_military_buildup
+		cost = 25
+		fire_only_once = yes
+		allowed = { 
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PLA_equipment_research
+		}
+		available = {
+			NOT = {
+				has_country_flag = PRC_military_project_researching
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = anti_debil
+				}
+			}
+		}
+		complete_effect = {
+			country_event = china.262
+			set_country_flag = anti_debil
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	PRC_project_dark_sword_dec = {
+		#icon = GFX_decision_ger_military_buildup
+		cost = 25
+		fire_only_once = yes
+		allowed = { 
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PLA_equipment_research
+		}
+		available = {
+			NOT = {
+				has_country_flag = PRC_military_project_researching
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = anti_debil
+				}
+			}
+		}
+		complete_effect = {
+			country_event = china.263
+			set_country_flag = anti_debil
+		}
+
+		ai_will_do = {
+			base = 1
+		}
+	}
+	PRC_project_flash_dec = {
+		#icon = GFX_decision_ger_military_buildup
+		cost = 25
+		fire_only_once = yes
+		allowed = { 
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PLA_equipment_research
+		}
+		available = {
+			NOT = {
+				has_country_flag = PRC_military_project_researching
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = anti_debil
+				}
+			}
+		}
+		complete_effect = {
+			country_event = china.264
+			set_country_flag = anti_debil
+		}
+
+		ai_will_do = {
+			base = 1
 		}
 	}
 }
@@ -2873,6 +2937,137 @@ PRC_new_left_pla_space_force = {
 		timeout_effect = {
 			add_to_variable = { rocket_army_ability_upper_limit = 1 }
 			custom_effect_tooltip = rocket_army_strengthen_tt
+		}
+	}
+	#太空军
+	PLA_space_army_research = {
+		activation = {                
+            always = no
+        }
+		available = {
+			hidden_trigger = { always = no }
+		}
+        is_good = yes
+        days_mission_timeout = 180    
+        timeout_effect = {
+			add_to_variable = { PRC_space_force_on_orbit = 1 }
+			add_to_variable = { space_army_upper_limit = 1 }
+			create_equipment_variant = {
+				name = "轨道空降军辅助侦察坦克"
+				type = light_tank_chassis_3
+				parent_version = 0
+				modules = {
+					main_armament_slot = tank_auto_cannon_2
+					turret_type_slot = tank_light_three_man_tank_turret
+					suspension_type_slot = tank_bogie_suspension
+					armor_type_slot = tank_welded_armor
+					engine_type_slot = tank_diesel_engine
+					special_type_slot_1 = tank_radio_3
+					special_type_slot_5 = gunner_thermal_2
+				}
+				upgrades = {
+					tank_nsb_engine_upgrade = 0
+					tank_nsb_armor_upgrade = 14
+				}
+			}
+			
+			division_template = {
+				name = "轨道空降军"
+				is_locked = yes
+				
+				regiments = {
+					space_army = {
+						x = 0
+						y = 1
+					}
+					space_army = {
+						x = 0
+						y = 2
+					}
+					space_army = {
+						x = 0
+						y = 3
+					}
+					space_army = {
+						x = 0
+						y = 4
+					}
+					space_army = {
+						x = 0
+						y = 0
+					}
+					space_army = {
+						x = 1
+						y = 1
+					}
+					space_army = {
+						x = 1
+						y = 2
+					}
+					space_army = {
+						x = 1
+						y = 3
+					}
+					space_army = {
+						x = 1
+						y = 4
+					}
+					space_army = {
+						x = 1
+						y = 0
+					}
+					space_army = {
+						x = 2
+						y = 0
+					}
+					space_army = {
+						x = 2
+						y = 1
+					}
+					space_army = {
+						x = 2
+						y = 2
+					}
+				}
+				
+				support = {
+					engineer = {
+						x = 0
+						y = 0
+					}
+					exoskeleton_support = {
+						x = 0
+						y = 1
+					} 
+					spa_company = {
+						x = 0
+						y = 2
+					}
+					light_tank_recon = {
+						x = 0
+						y = 3
+					}
+					signal_company = {
+						x = 0
+						y = 4
+					}
+				}
+			}
+			custom_effect_tooltip = PLA_space_army_research_ctt
+		}
+	}
+	PLA_space_army_produce = {
+		activation = {                
+            always = no
+        }
+		available = {
+			hidden_trigger = { always = no }
+		}
+        is_good = yes
+        days_mission_timeout = 60
+        timeout_effect = {
+			add_to_variable = { PRC_space_force_on_orbit = 1 }
+			PRC_space_force_counter = yes
 		}
 	}
 } 

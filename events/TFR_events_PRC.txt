@@ -688,7 +688,8 @@ country_event = {
 	option = {
 		name = china.23.a
 		add_ideas = PRC_he_junke_eco
-		add_ideas = PRC_yu_hongqiu_sec
+		add_ideas = PRC_wang_yi_for
+		add_ideas = PRC_chen_wenqing_int
 		add_ideas = PRC_li_qiaoming
 		add_ideas = PRC_zhang_jun_sec
 		effect_tooltip = {
@@ -8848,15 +8849,15 @@ country_event = {
 		}
 		hidden_effect = {
 			add_to_variable = {
-				var = PRC_plan_navy_capital_ship_attack_factor_dynamic_var
+				var = PRC_pla_navy_capital_ship_attack_factor_dynamic_var
 				value = 0.1
 			}
 			add_to_variable = {
-				var = PRC_plan_navy_screen_attack_factor_dynamic_var
+				var = PRC_pla_navy_screen_attack_factor_dynamic_var
 				value = 0.1
 			}
 			add_to_variable = {
-				var = PRC_plan_naval_damage_factor_dynamic_var
+				var = PRC_pla_naval_damage_factor_dynamic_var
 				value = 0.05
 			}
 		}

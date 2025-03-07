@@ -1995,7 +1995,6 @@ focus_tree = {
 			unlock_decision_tooltip = PRC_intensify_marine_training
 			unlock_decision_tooltip = PRC_thunder_god_program_mountain
 			unlock_decision_tooltip = PRC_thunder_god_program_jungle
-			unlock_decision_category_tooltip = PRC_pla_reformation
 			unlock_decision_tooltip = PRC_conduct_army_exercises
 		}
 	}
@@ -2309,11 +2308,15 @@ focus_tree = {
 		y = 1
 		relative_position_id = PLA_party_commands_guns
 		completion_reward = {
-			unlock_decision_category_tooltip = PRC_pla_reformation
+			add_dynamic_modifier = {
+				modifier = PRC_pla_dynamic
+			}
 			unlock_decision_tooltip = PRC_project_ghost_dec
 			unlock_decision_tooltip = PRC_project_nib_dec
 			unlock_decision_tooltip = PRC_project_dark_sword_dec
-			unlock_decision_tooltip = PRC_project_nami_dec
+			unlock_decision_tooltip = PRC_project_impulse_dec
+			unlock_decision_tooltip = PRC_project_swimmer_dec
+			unlock_decision_tooltip = PRC_project_flash_dec
 			set_temp_variable = {
 				var = debt_var_temp
 				value = 50

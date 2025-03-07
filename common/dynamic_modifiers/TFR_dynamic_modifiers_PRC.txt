@@ -542,6 +542,10 @@ PRC_pla_dynamic = {
 	recon_factor = PRC_pla_recon_factor_dynamic_var
 	army_infantry_attack_factor = PRC_pla_army_infantry_attack_factor_dynamic_var
 	army_infantry_defence_factor = PRC_pla_army_infantry_defence_factor_dynamic_var
+	#为装备研发做兼容
+	navy_capital_ship_attack_factor = PRC_pla_navy_capital_ship_attack_factor_dynamic_var
+	navy_screen_attack_factor = PRC_pla_navy_screen_attack_factor_dynamic_var
+	naval_damage_factor = PRC_pla_naval_damage_factor_dynamic_var
 }
 	
 PRC_plan_dynamic = {
