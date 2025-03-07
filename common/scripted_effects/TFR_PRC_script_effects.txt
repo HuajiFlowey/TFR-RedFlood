@@ -1,0 +1,15 @@
+MRC_at_change_MON = {
+	clamp_variable = {
+		var = MRC_at_MON
+		min = 0
+		max = 100
+	}
+}
+
+MRC_at_change_CPC = {
+	clamp_variable = {
+		var = MRC_at_PRC
+		min = 0
+		max = 100
+	}
+}

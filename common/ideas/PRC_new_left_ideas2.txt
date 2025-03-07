@@ -1,0 +1,49 @@
+ideas = {
+	#动态修正占位符
+	country = {
+		New_left_PRC_communist_party_of_china_dummy = {
+			name = PRC_chinese_communist_party_idea
+			modifier = {
+			}
+		}
+		New_left_PRC_communist_party_of_china_dummy_1 = {
+			name = PRC_chinese_communist_party_idea
+			modifier = {
+				crypto_strength = -1
+			}
+		}
+		New_left_PRC_communist_party_of_china_dummy_2 = {
+			name = PRC_chinese_communist_party_idea
+			modifier = {
+				stability_factor = -0.05
+				libertarian_socialist_drift = 0.001
+				social_democrat_drift = 0.001
+				totalitarian_socialist_drift = 0.001
+			}
+		}
+		New_left_PRC_communist_party_of_china_dummy_3 = {
+			name = PRC_chinese_communist_party_idea
+			modifier = {
+				communist_drift = 0.01
+			}
+		}
+	}
+	#内阁
+	head_minister = {
+		PRC_HuChunHua_hog_dummy = {
+			picture = HuChunHua_hog
+			name = PRC_HuChunHua_hog
+			allowed = { original_tag = PRC}
+			visible = {
+				has_country_flag = PRC_the_man_death_flag
+				tag = PRC
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = { 
+				hog_pragmatic_statesman
+			}
+		}
+	}
+}

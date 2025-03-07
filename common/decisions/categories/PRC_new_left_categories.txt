@@ -1,0 +1,30 @@
+PRC_new_left_pla_reformation = {
+    icon = GFX_PRC_pla_cat
+	picture = GFX_decision_cat_PRC_pla_picture
+    visible_when_empty = yes
+
+    allowed = {
+    	#tag = PRC
+    }
+    
+    visible = {
+    	has_completed_focus = PLA_reform
+    }
+    
+    priority = 3
+}
+
+PRC_new_left_pla_space_force = {
+    icon = GFX_PRC_pla_cat
+    visible_when_empty = yes
+    
+    allowed = {
+    	#tag = PRC
+    }
+    scripted_gui = new_left_space_force_entrance_gui
+    visible = {
+    	has_country_flag = PRC_new_left_pla_space_force_GUI_open
+    }
+    
+    priority = 1
+}

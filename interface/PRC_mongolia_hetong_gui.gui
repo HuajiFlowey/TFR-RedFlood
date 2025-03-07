@@ -1,0 +1,58 @@
+guiTypes = {
+	containerWindowType = {
+		position = { x = 10 y = 15 }
+		size = { width = 500 height = 320 }
+		name = "PRC_mongolia_hetong_dec"
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_PRC_left_monglin"
+			position = { x = -3 y = 0 }
+		}
+		# iconType = {
+		# 	name = "TER_MRC_total_progress"
+		# 	quadTextureSprite = "GFX_TER_MRC_total_progress"
+		# 	position = { x = 200 y = 122 }
+		# 	pdx_tooltip = "TER_MRC_info"
+		# }
+
+		iconType = {
+			name = "TFR_MRC_at_progress_PRC"
+			quadTextureSprite = "GFX_PRC_TFR_mongouhe_acc"
+			position = { x = 24 y = 34 }
+			pdx_tooltip = "TFR_MRC_at_value_PRC"
+		}
+
+		iconType = {
+			name = "TFR_MRC_at_progress_MON"
+			quadTextureSprite = "GFX_PRC_TFR_mongouhe_acc"
+			position = { x = 450 y = 34 }
+			pdx_tooltip = "TFR_MRC_at_value_MON"
+		}
+
+		# instantTextBoxType = {
+		# 	name = "TER_MRC_title" 
+		# 	position = { x = 149 y = 9 }
+		# 	format = center
+		# 	text = "TER_MRC_title"
+		# 	font = "aldrich_28_outline"
+		# 	alwaystransparent = yes
+		# }
+
+		# instantTextBoxType = {
+		# 	name = "TER_MRC_at_CPC"
+		# 	position = { x = 18 y = 339 }
+		# 	format = left
+		# 	text = "TER_MRC_at_CPC"
+		# 	font = "aldrich_24_outline"
+		# 	alwaystransparent = yes
+		# }
+		# instantTextBoxType = {
+		# 	name = "TER_MRC_at_MON"
+		# 	position = { x = 278 y = 339 }
+		# 	format = right
+		# 	text = "TER_MRC_at_MON"
+		# 	font = "aldrich_24_outline"
+		# 	alwaystransparent = yes
+		# }
+	}
+}
